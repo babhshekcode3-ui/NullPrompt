@@ -1,0 +1,68 @@
+# Local environments and secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# Evidence and derived data: never commit operational or experiment payloads
+/data/raw/**
+/data/processed/**
+/data/quarantine/**
+/experiments/datasets/**
+/experiments/results/**
+# Keep directory placeholders tracked
+!/data/raw/.gitkeep
+!/data/processed/.gitkeep
+!/data/quarantine/.gitkeep
+!/experiments/datasets/.gitkeep
+!/experiments/results/.gitkeep
+
+# Local databases and database sidecars
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-shm
+*.db-wal
+*.sqlite-journal
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite3-journal
+*.sqlite3-shm
+*.sqlite3-wal
+
+# Python artifacts and test/tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Generated/build artifacts
+build/
+dist/
+*.egg-info/
+.tox/
+.nox/
+site/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Application logs and temporary files
+*.log
+*.tmp
+*.temp
